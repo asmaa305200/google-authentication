@@ -1,0 +1,25 @@
+<div
+  class="d-flex align-items-center justify-content-center vh-100 bg-gradient-to-br"
+>
+  <div
+    class="bg-white font-weight-bold text-center rounded-3 border shadow-lg p-4 mx-auto"
+  >
+    <img
+      class="mb-3 rounded-circle shadow-lg mx-auto"
+      [src]="userImg"
+      alt="product designer"
+      style="width: 8rem; height: 8rem"
+    />
+    <h1 class="h5 text-gray-700">{{ name }}</h1>
+    <h3 class="h6 text-gray-400 mb-3">Front-End developer</h3>
+    <p class="small text-gray-400">Address:</p>
+    <p class="small text-gray-400">Phone:</p>
+    <p class="small text-gray-400">email: {{ email }}</p>
+    <button
+      (click)="signOut()"
+      class="btn btn-primary px-4 py-2 mt-3 rounded-3 text-white font-weight-bold text-uppercase signOut"
+    >
+      Sign Out
+    </button>
+  </div>
+</div>
